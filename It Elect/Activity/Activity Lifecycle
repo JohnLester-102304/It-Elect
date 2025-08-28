@@ -1,0 +1,42 @@
+//onCreate()
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+    Log.d("Lifecycle", "onCreate called");
+}
+
+//onStart()
+@Override
+protected void onStart() {
+    super.onStart();
+    Log.d("Lifecycle", "onStart called");
+}
+
+//onResume()
+@Override
+protected void onResume() {
+    super.onResume();
+    Log.d("Lifecycle", "onResume called");
+}
+
+//onPause()
+@Override
+protected void onPause() {
+    super.onPause();
+    Log.d("Lifecycle", "onPause called");
+}
+
+//onStop()
+@Override
+protected void onStop() {
+    super.onStop();
+    Log.d("Lifecycle", "onStop called");
+}
+
+//onDestroy()
+@Override
+protected void onDestroy() {
+    super.onDestroy();
+    Log.d("Lifecycle", "onDestroy called");
+}
