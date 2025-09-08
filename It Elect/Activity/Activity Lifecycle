@@ -1,42 +1,60 @@
-//onCreate()
-@Override
-protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_main);
-    Log.d("Lifecycle", "onCreate called");
-}
+package com.example.lifecycleapp;
 
-//onStart()
-@Override
-protected void onStart() {
-    super.onStart();
-    Log.d("Lifecycle", "onStart called");
-}
+import android.os.Bundle;
+import android.util.Log;
+import androidx.appcompat.app.AppCompatActivity;
 
-//onResume()
-@Override
-protected void onResume() {
-    super.onResume();
-    Log.d("Lifecycle", "onResume called");
-}
+public class MainActivity extends AppCompatActivity {
 
-//onPause()
-@Override
-protected void onPause() {
-    super.onPause();
-    Log.d("Lifecycle", "onPause called");
-}
+    private static final String TAG = "ActivityLifecycle";
 
-//onStop()
-@Override
-protected void onStop() {
-    super.onStop();
-    Log.d("Lifecycle", "onStop called");
-}
+    //onCreate
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main); // UI layout
+        Log.d(TAG, "onCreate called");
+    }
 
-//onDestroy()
-@Override
-protected void onDestroy() {
-    super.onDestroy();
-    Log.d("Lifecycle", "onDestroy called");
+    //onStart
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d(TAG, "onStart called");
+    }
+
+    //onResume
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d(TAG, "onResume called");
+    }
+
+    //onPause
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d(TAG, "onPause called");
+    }
+
+    //onStop
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d(TAG, "onStop called");
+    }
+
+    //onRestart
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.d(TAG, "onRestart called");
+    }
+
+    //onDestroy
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d(TAG, "onDestroy called");
+    }
 }
